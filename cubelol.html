@@ -1,0 +1,109 @@
+<!DOCTYPE HTML> 
+<html lang="fr"> 
+<head> 
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+<script
+	src="https://code.jquery.com/jquery-3.1.0.min.js"
+	integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+	crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head> 
+<body>
+<!-- merci à Corentin -->
+<div class="container">
+<div class="row row-centered">
+<div class="col-lg-12 text-center">
+<div class="rotate">
+<h1>marche sur chrome :^)</h1>
+<h5>#HARAMBE</h5>
+</div>
+<div class="scene3d">
+        <div id="cube">
+            <div id="back"><img id="chillet" src="lel/Tony_Robbins.jpg" alt="1" width="400px" height="400px"><h2> lol mmi :^)</h2></div>
+            <div id="right"><img id="chillet2" src="lel/0regis.jpg" alt="2" width="400px" height="400px"></div>
+            <div id="left"><img id="chillet3" src="regis.jpg" alt="3" width="400px" height="400px"></div>
+            <div id="face"><img id="chillet4" src="lel/0regis.jpg" alt="3" width="400px" height="400px"></div>
+            <div id="up"><img id="chillet5" src="regis.jpg" alt="3" width="400px" height="400px"></div>
+            <div id="down"><img id="chillet6" src="regis.jpg" alt="2" width="400px" height="400px"></div>
+        </div>
+    </div>
+<div class="col-sm-3 text-center affix">
+<button type="button" class="btn btn-warning" onclick="nique_tm()">Mode Béni</button>
+<button type="button" class="btn btn-warning" onclick="niquez_vm()">Mode Chérain</button><br>
+<button type="button" class="btn btn-warning" onclick="nique_tr()">Mode Chao</button>
+<button type="button" class="btn btn-warning" onclick="niquez_vr()">Mode RANDOM</button>
+<button type="button" class="btn btn-danger" onclick="crashBrowser()">CRASH NAVIGATEUR</button>
+</div>
+<div class="col-md-3">
+<div id="crashMyBrowser"></div>
+</div>
+<div class="col-md-3">
+<div id="crashmyBrowser2">
+</div>
+</div>
+<div class="col-md-3">
+<div id="crashMyBrowser3">
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>//j'ai la flemme
+var kek = ["lel/1300634306978.gif", "lel/1302116932217.gif", "lel/Tony_Robbins.jpg", "lel/1301826745028.gif", "lel/aa.PNG", "lel/1302121642979.jpg", "lel/1301674236601.png", "lel/14265074_10206779238945068_4542693189879052853_n.jpg", "lel/hax.jpg", "lel/fp.jpg", "lel/sponge.jpg", "lel/le_kaz.jpg", "lel/hey.jpg", "lel/00.jpg", "lel/1298840824478.jpg", "lel/pb.jpg", "lel/top_kek.jpg", "lel/le_ben.jpg", "lel/0regis.jpg", "lel/1296922301226s.jpg", "lel/1296923411591s.jpg"]; 
+function nique_tm() {
+document.getElementById("chillet2").src = "lel/le_ben.jpg";
+document.getElementById("chillet3").src = "lel/le_ben.jpg";
+document.getElementById("chillet4").src = "lel/le_ben.jpg";
+document.getElementById("chillet5").src = "lel/le_ben.jpg";
+document.getElementById("chillet6").src = "lel/le_ben.jpg";
+}
+function niquez_vm(){
+document.getElementById("chillet2").src = "lel/top_kek.jpg";
+document.getElementById("chillet3").src = "lel/top_kek.jpg";
+document.getElementById("chillet4").src = "lel/top_kek.jpg";
+document.getElementById("chillet5").src = "lel/top_kek.jpg";
+document.getElementById("chillet6").src = "lel/top_kek.jpg";
+}
+function nique_tr(){
+document.getElementById("chillet2").src = "lel/hey.jpg";
+document.getElementById("chillet3").src = "lel/hey.jpg";
+document.getElementById("chillet4").src = "lel/hey.jpg";
+document.getElementById("chillet5").src = "lel/hey.jpg";
+document.getElementById("chillet6").src = "lel/hey.jpg";
+}
+function niquez_vr(){
+document.getElementById("chillet2").src = kek[Math.floor(Math.random() * 21)];
+document.getElementById("chillet3").src = kek[Math.floor(Math.random() * 21)];
+document.getElementById("chillet4").src = kek[Math.floor(Math.random() * 21)];
+document.getElementById("chillet5").src = kek[Math.floor(Math.random() * 21)];
+document.getElementById("chillet6").src = kek[Math.floor(Math.random() * 21)];
+}
+
+// nouvelle div avec nouveau cube, je pense, j'espere que ça va marcher, yeah
+function crashBrowser(){
+    // loop ici
+    for (i = 0; i <= 2000; i++) {
+        // nouveau cube
+        setTimeout(function(){
+           $("#crashMyBrowser").append('<div class="scene3d"><div id="cube"><div id="back"><img id="chillet" src="Tony_Robbins.jpg" alt="1" width="400px" height="400px"><h2> lol mmi :^)</h2></div><div id="right"><img id="chillet2" src="0regis.jpg" alt="2" width="400px" height="400px"></div><div id="left"><img id="chillet3" src="regis.jpg" alt="3" width="400px" height="400px"></div><div id="face"><img id="chillet4" src="0regis.jpg" alt="3" width="400px" height="400px"></div><div id="up"><img id="chillet5" src="regis.jpg" alt="3" width="400px" height="400px"></div><div id="down"><img id="chillet6" src="regis.jpg" alt="2" width="400px" height="400px"></div></div></div>');
+           $("#crashMyBrowser2").append('<div class="scene3d"><div id="cube"><div id="back"><img id="chillet" src="Tony_Robbins.jpg" alt="1" width="400px" height="400px"><h2> lol mmi :^)</h2></div><div id="right"><img id="chillet2" src="0regis.jpg" alt="2" width="400px" height="400px"></div><div id="left"><img id="chillet3" src="regis.jpg" alt="3" width="400px" height="400px"></div><div id="face"><img id="chillet4" src="0regis.jpg" alt="3" width="400px" height="400px"></div><div id="up"><img id="chillet5" src="regis.jpg" alt="3" width="400px" height="400px"></div><div id="down"><img id="chillet6" src="regis.jpg" alt="2" width="400px" height="400px"></div></div></div>');
+           $("#crashMyBrowser3").append('<div class="scene3d"><div id="cube"><div id="back"><img id="chillet" src="Tony_Robbins.jpg" alt="1" width="400px" height="400px"><h2> lol mmi :^)</h2></div><div id="right"><img id="chillet2" src="0regis.jpg" alt="2" width="400px" height="400px"></div><div id="left"><img id="chillet3" src="regis.jpg" alt="3" width="400px" height="400px"></div><div id="face"><img id="chillet4" src="0regis.jpg" alt="3" width="400px" height="400px"></div><div id="up"><img id="chillet5" src="regis.jpg" alt="3" width="400px" height="400px"></div><div id="down"><img id="chillet6" src="regis.jpg" alt="2" width="400px" height="400px"></div></div></div>');
+        }, 70*i);
+        niquez_vr();
+    }
+}
+</script>
+</body>
+</html> 
+<!-- <div class="scene3d_2"><div id="cube2"><div id="back"><img id="chillet" src="Tony_Robbins.jpg" alt="1" width="200px" height="200px"><h2> kek mmi :^)</h2></div><div id="right"><img id="chillet2" src="0regis.jpg" alt="2" width="200px" height="200px"></div><div id="left"><img id="chillet3" src="regis.jpg" alt="3" width="200px" height="200px"></div><div id="face"><img id="chillet4" src="0regis.jpg" alt="3" width="200px" height="200px"></div><div id="up"><img id="chillet5" src="regis.jpg" alt="2" width="200px" height="200px"></div><div id="down"><img id="chillet6" src="regis.jpg" alt="1" width="200px" height="200px"></div></div></div>
+<div class="scene3d"><div id="cube">
+<div id="back"><img id="chillet" src= alt="1" width="400px" height="400px"><h2> lol mmi :^)</h2></div>
+<div id="right"><img id="chillet2" src= alt="2" width="400px" height="400px"></div>
+<div id="left"><img id="chillet3" src= alt="3" width="400px" height="400px"></div>
+<div id="face"><img id="chillet4" src=  alt="3" width="400px" height="400px"></div>
+<div id="up"><img id="chillet5" src=  alt="3" width="400px" height="400px"></div>
+<div id="down"><img id="chillet6" src=  alt="2" width="400px" height="400px"></div></div></div>-->
